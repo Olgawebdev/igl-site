@@ -3,10 +3,28 @@
 }
 /* ===============Main page============== */
 .home-body{
-  background: url("../img/BG_Fon_IMG.png") no-repeat;
-  background-position: inherit;
-  align-items: stretch;
+  background-image: url("../img/BG_Fon_IMG.png");
+  background-position: top;
+  background-size: cover;
   min-height: 100vh;
+}
+.home-body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000075;
+  z-index: -1;
+
+}
+.body-content{
+  min-height: 100vh;
+  
+}
+.logo{
+  height: 260px;
 }
 
 /* ================== Sitebar ===================*/
