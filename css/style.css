@@ -1,0 +1,288 @@
+* {
+  font-family: "Roboto", sans-serif!important;
+}
+/* ===============Main page============== */
+.home-body{
+  background: url("../img/BG_Fon_IMG.png") no-repeat;
+  background-position: inherit;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+/* ================== Sitebar ===================*/
+.sitebar{
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background: transparent;
+  width: 250px;
+  height: 100% ;
+  transition: .5s;
+}
+.sitebar .active{
+  right: 0;
+}
+ul{
+  margin: 0;
+  padding: 40px 0;
+}
+ul li{
+  list-style: none;
+}
+ul li a{
+  padding: 5px 20px;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+ul li a:hover{
+  text-decoration: none;
+  color: #52f304;
+}
+.sitebarBtn{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none; 
+  color: white;
+}
+.sitebarBtn span{
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: white;
+  position: absolute;
+  top: 24px;
+  transition: 0.3s;
+}
+.sitebarBtn span::before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+.sitebarBtn span::after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;;
+  transition: 0.3s;
+}
+.sitebarBtn.toggle span{
+  background: transparent;
+} 
+.sitebarBtn.toggle span::before{
+  top: 0;
+  transform: rotate(45deg);
+}
+.sitebarBtn.toggle span::after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+/* =============================================== */
+
+
+/* ================About Us=================== */
+body{
+  background: #000;
+  background-position: inherit;
+  align-items: stretch;
+  min-height: 100vh;
+}
+header{
+  display: flex;
+}
+.header img{ 
+  width: 250px;
+  height: 85px;
+  margin: 30px ;
+  
+}
+/* ===================== Portfolio ========================== */
+.portfolio{
+  width: 85%;
+  margin: 0 auto;
+  text-align: right;
+}
+.toggles-menu button{
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  background: transparent;
+  color: white;
+  margin: 3px;
+}
+.toggles-menu button:hover{
+  color: #52f304;
+}
+/* .toggle-menu button::after{
+  content: ' / ';
+  
+}
+.toggle-menu button:last-child::after{
+  content: ' ';
+} */
+.posts{
+  width: 85%;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  margin: 5px auto;
+  
+}
+.posts img{
+  width: 350px;
+  height: 180px;
+  margin: 5px;
+}
+
+/* ===================== Vacansii ========================== */
+.candidates-container{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.candidates-container h2{
+  font-size: 30px;
+  color: white;
+}
+.candidates-card{
+  width: 80%;
+  display: flex;
+  justify-content: space-between; 
+  /* margin-right: 5px; */
+}
+.card{
+  display: flex;
+  margin: 3px;
+  width: 80%;
+}
+.top-card{
+  display: flex;
+}
+.top-card img{
+  width: 350px;
+  height: 200px;
+  margin: 3px;
+}
+.bottom-card{
+  background: #000;
+  position: relative;
+  
+}
+.bottom-card p{
+  color: #ffffff;
+  padding: 10px ;
+}
+button{
+  background: #000; 
+  transition: 0.5s;
+  border: none;
+  padding-bottom: 10px;
+}
+button a{
+  font-weight: normal;
+  text-decoration: none;
+  color: white ;
+  /* padding: 5px 5px; */
+}
+button a:hover{
+  color: #52f304;
+  text-decoration: none;
+}
+
+/* ===================== Contacts ========================== */
+.contacts{
+  width: 85%;
+  margin: 0 auto;
+  text-align: center; 
+}
+.ourcontacts h2{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.contacts-column{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.contact-right{
+  margin: 0 auto;
+}
+.contact-right a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  text-align: right; 
+}
+.contact-right a:hover{
+  color: #52f304;
+}
+.contact-right h5{
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: right;
+}
+.contact-right p{
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px;
+  text-align: right;
+}
+.contact-right a, .contact-right h5,
+.contact-right p{
+  border-right: 1px double white;
+  padding: 15px;
+}
+.contact-left {
+  width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========== Медиa запросы =========== */
+@media screen and (max-width: 1199.9px) {
+}
+@media screen and (max-width: 1023.9px) {
+}
+@media screen and (max-width: 991.9px) {
+}
+@media screen and (max-width: 767.9px) {
+}
+@media screen and (max-width: 575.9px) {
+  /* header .menu{
+        flex-direction: column;
+        align-items: center;
+    } */
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
+}
