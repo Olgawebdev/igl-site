@@ -284,37 +284,48 @@ p{
 
 
 /* ===================== Vacansii ========================== */
+.candidates{
+  width: 90%;
+  margin: auto;
+}
 .candidates-container{
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   text-align: center;
 }
-.candidates-container h2{
-  font-size: 30px;
+.candidates-container h3{
+  font-size: 20px;
   color: white;
+  margin-bottom: 25px;
 }
 .candidates-card{
   width: 80%;
   display: flex;
   justify-content: space-between; 
-  /* margin-right: 5px; */
+  margin: 5px auto;
 }
 .card{
   display: flex;
   margin: 3px;
-  width: 80%;
+  width: 30%;
 }
 .top-card{
   display: flex;
+  width: 150px;
+  height: 200px;
 }
-.top-card img{
-  width: 350px;
+/* .top-card img{
+  width: 30%;
   height: 200px;
   margin: 3px;
-}
+} */
 .bottom-card{
   background: #000;
   position: relative;
+  top: 588px;
+  left: 259px;
+  width: 424px;
+  height: 379px;
   
 }
 .bottom-card p{
@@ -340,7 +351,7 @@ button a:hover{
 
 /* ===================== Contacts ========================== */
 .contacts{
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   text-align: center; 
 }
@@ -348,7 +359,7 @@ button a:hover{
   font-size: 30px;
   color: white;
   text-align: center;
-  margin-top: 20px;
+  /* margin-top: 5px; */
 }
 .contacts-column{
   width: 85%;
@@ -358,6 +369,10 @@ button a:hover{
 }
 .contact-right{
   margin: 0 auto;
+  width: 500px;
+  height: 240px;
+  box-sizing: border-box;
+  border:  0px solid red;
 }
 .contact-right a{
   text-decoration: none;
@@ -372,27 +387,83 @@ button a:hover{
 .contact-right h5{
   color: #ffffff;
   font-size: 20px;
-  padding: 20px;
+  padding: 3px;
+  text-align: right;
+}
+.contact-right h6{
+  color: #ffffff;
+  font-size: 16px;
+  padding: 3px;
   text-align: right;
 }
 .contact-right p{
   color: #ffffff;
   font-size: 18px;
-  padding: 10px;
+  padding: 3px;
   text-align: right;
 }
-.contact-right a, .contact-right h5,
+.contact-right a, .contact-right h5, .contact-right h6,
 .contact-right p{
   border-right: 1px double white;
-  padding: 15px;
+  padding: 10px;
 }
 .contact-left {
   width: 40%;
+ 
+}
+.map{
+  width: 500px;
+  height: 240px;
+  box-sizing: border-box;
+  
+}
+.soc ul{
+  display: flex;
+  width: 50%;
+  height: 50px;
+  justify-content: space-between;
+  margin: 30px 400px;
+  list-style: none;
+  
+}
+.soc ul li a{
+  width: 51px;
+  height: 51px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: auto;
+  border-radius: 20%;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 50px;
+  
+}
+.soc ul li.tg a{
+  border-radius: 50%;
+  transition: all 0.5s;
 }
 
+.soc ul li:nth-child(1) a{
+  background: #2e3192;
+}
+.soc ul li:nth-child(2) a{
+  background: #ed3123;
+}
+.soc ul li:nth-child(3) a{
+  background: #00aeef;
+}
 
-
-
+.soc ul li:nth-child(1) a:hover{
+  box-shadow: 0 0 10px 2px  #2e3192;
+}
+.soc ul li:nth-child(2) a:hover{
+  box-shadow: 0 0 10px 2px #ed3123;
+}
+.soc ul li:nth-child(3) a:hover{
+  box-shadow: 0 0 10px 2px #00aeef;
+}
 
 
 
