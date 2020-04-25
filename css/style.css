@@ -32,30 +32,34 @@
 }
 
 /* ================== Sitebar ===================*/
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .sitebar{
   position: fixed;
-  top: 45px;
-  right:-100vw;
-  background: transparent;
-  width: 100vw;
+  top: 0;
+  right: -250px;
+  /* background: transparent;  */
+  background:  #173f03 ;
+  width: 150px;
   height: 100% ;
-  transition: all .5s;
-  opacity: .95;
-  z-index: 9999;
+  transition:.5s; 
 }
-.sitebar .active{
+ .active{
   right: 0;
 }
 ul{
-  margin: 0;
+  margin: 30px 0;
   padding: 40px 0;
-  height: 100vw;
+  height: 100px;
 }
 ul li{
   list-style: none;
 }
 ul li a{
-  padding: 5px 20px;
+  padding: 15px 20px;
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -67,7 +71,7 @@ ul li a:hover{
 .sitebarBtn{
   position: absolute;
   top: 20px;
-  right: 10px;
+  right: 250px;
   width: 50px;
   height: 50px;
   box-sizing: border-box;
@@ -138,11 +142,10 @@ header{
 .container{
   margin-top: 30px;
 }
-/* .row{
-  display: flex;
-  height: ;
-}
+
 .owl-carousel{
+  display: flex;
+  flex-direction: column;
   border-right: 1px double #52f304;
   padding: 15px;
   
@@ -155,18 +158,13 @@ header{
 .item img{
   width: 300px;
   height: 100px;
-} */
+}
 /* ===================== Portfolio ========================== */
 .portfolio{
   width: 100%;
   margin: auto;
   max-width: 1100px;
   text-align: right; 
-}
-.toggles-menu{
-  
-  
-
 }
 .toggles-menu button{
   border: none;
